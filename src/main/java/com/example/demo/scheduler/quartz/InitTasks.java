@@ -262,10 +262,10 @@ public class InitTasks {
 		
 		// 测试暂停 恢复 删除任务
 		// 1. 先添加几个任务
-		addTask("11111", "0/5 * * * * ?");
-		addTask("22222", "0/5 * * * * ?");
-		addTask("33333", "0/5 * * * * ?");
-		addTask("44444", "0/5 * * * * ?");
+		//addTask("11111", "0/5 * * * * ?");
+		//addTask("22222", "0/5 * * * * ?");
+		//addTask("33333", "0/5 * * * * ?");
+		//addTask("44444", "0/5 * * * * ?");
 //		Thread.currentThread().sleep(5000);
 //		// 2.暂停任务
 //		System.out.println("暂停任务22222");
