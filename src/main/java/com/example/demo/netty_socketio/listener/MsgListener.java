@@ -6,7 +6,9 @@ import java.util.Date;
 import com.corundumstudio.socketio.AckRequest;
 import com.corundumstudio.socketio.SocketIOClient;
 import com.corundumstudio.socketio.SocketIOServer;
+import com.corundumstudio.socketio.listener.ConnectListener;
 import com.corundumstudio.socketio.listener.DataListener;
+import com.corundumstudio.socketio.listener.DisconnectListener;
 import com.example.demo.netty_socketio.entity.Message;
 
 /**
@@ -14,7 +16,7 @@ import com.example.demo.netty_socketio.entity.Message;
  * @author admin
  *
  */
-public class MsgListener implements DataListener<Message> {
+public class MsgListener implements DataListener<Message>, ConnectListener, DisconnectListener {
 	
 	private SocketIOServer server;
 	
@@ -37,7 +39,18 @@ public class MsgListener implements DataListener<Message> {
 	@Override
 	public void onData(SocketIOClient client, Message msg, AckRequest req) throws Exception {
 		msg.setDate(local.get().format(new Date()));
+		// test 是时间，页面需要定义test事件的js接收
 		this.server.getBroadcastOperations().sendEvent("test", msg);
+	}
+
+	@Override
+	public void onConnect(SocketIOClient client) {
+		System.err.println("客户端：" + client.getSessionId() + "连接");
+	}
+
+	@Override
+	public void onDisconnect(SocketIOClient client) {
+		System.err.println("客户端：" + client.getSessionId() + "断开连接");
 	}
 
 }
