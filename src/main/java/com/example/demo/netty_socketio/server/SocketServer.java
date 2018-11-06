@@ -51,6 +51,14 @@ public class SocketServer implements ApplicationRunner {
 		// 连接断开的listener
 		server.addDisconnectListener(listener);
 		
+		
+		
+		//namespace
+		/*SocketIONamespace chat1namespace = server.addNamespace("msg_111");
+		chat1namespace.addConnectListener(listener);
+		chat1namespace.addEventListener("chat", Message.class, listener);
+		chat1namespace.addDisconnectListener(listener);*/
+		
 		server.start();
 		while(true){
 			
@@ -58,8 +66,8 @@ public class SocketServer implements ApplicationRunner {
 			msg.setUsername("test");
 			msg.setMsg("success");
 			//回推消息
-			server.getBroadcastOperations().sendEvent("test", msg);
-			Thread.sleep(1000);
+			//server.getBroadcastOperations().sendEvent("test", msg);
+			Thread.sleep(5000);
 		}
 	}
 }

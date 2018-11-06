@@ -40,16 +40,21 @@ public class MsgListener implements DataListener<Message>, ConnectListener, Disc
 	public void onData(SocketIOClient client, Message msg, AckRequest req) throws Exception {
 		msg.setDate(local.get().format(new Date()));
 		// test 是时间，页面需要定义test事件的js接收
-		this.server.getBroadcastOperations().sendEvent("test", msg);
+		//this.server.getBroadcastOperations().sendEvent("test", msg);
+		this.server.getRoomOperations(client.getHandshakeData().getSingleUrlParam("appId")).sendEvent("test", msg);
+		//this.server.getNamespace("msg").getBroadcastOperations().sendEvent("test", msg);
 	}
 
 	@Override
 	public void onConnect(SocketIOClient client) {
+		String appId = client.getHandshakeData().getSingleUrlParam("appId");
+		client.joinRoom(appId);
 		System.err.println("客户端：" + client.getSessionId() + "连接");
 	}
 
 	@Override
 	public void onDisconnect(SocketIOClient client) {
+		//加入room
 		System.err.println("客户端：" + client.getSessionId() + "断开连接");
 	}
 
