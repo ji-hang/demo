@@ -1,0 +1,398 @@
+2018-11-21 10:50:36.208 logback [main] INFO  c.example.demo.ServerDemoApplication - Starting ServerDemoApplication on admin-PC with PID 8512 (E:\study_workspace\server-demo\target\classes started by admin in E:\study_workspace\server-demo)
+2018-11-21 10:50:36.219 logback [main] INFO  c.example.demo.ServerDemoApplication - No active profile set, falling back to default profiles: default
+2018-11-21 10:50:37.012 logback [main] INFO  c.example.demo.ServerDemoApplication - Started ServerDemoApplication in 1.672 seconds (JVM running for 2.449)
+2018-11-21 10:59:04.747 logback [main] INFO  c.example.demo.ServerDemoApplication - Starting ServerDemoApplication on admin-PC with PID 5208 (E:\study_workspace\server-demo\target\classes started by admin in E:\study_workspace\server-demo)
+2018-11-21 10:59:04.750 logback [main] INFO  c.example.demo.ServerDemoApplication - No active profile set, falling back to default profiles: default
+2018-11-21 10:59:05.031 logback [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'zkClient': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'zookeeper.addr' in value "${zookeeper.addr}"
+2018-11-21 10:59:05.038 logback [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-11-21 10:59:05.070 logback [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'zkClient': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'zookeeper.addr' in value "${zookeeper.addr}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:380)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1378)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.example.demo.ServerDemoApplication.main(ServerDemoApplication.java:13)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'zookeeper.addr' in value "${zookeeper.addr}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:172)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:237)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:211)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:842)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1187)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1166)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	... 16 common frames omitted
+2018-11-21 11:02:36.634 logback [main] INFO  c.example.demo.ServerDemoApplication - Starting ServerDemoApplication on admin-PC with PID 10236 (E:\study_workspace\server-demo\target\classes started by admin in E:\study_workspace\server-demo)
+2018-11-21 11:02:36.637 logback [main] INFO  c.example.demo.ServerDemoApplication - No active profile set, falling back to default profiles: default
+2018-11-21 11:02:36.924 logback [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'zkClient': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'zookeeper.addr' in value "${zookeeper.addr}"
+2018-11-21 11:02:36.931 logback [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-11-21 11:02:36.934 logback [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'zkClient': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'zookeeper.addr' in value "${zookeeper.addr}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:380)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1378)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.example.demo.ServerDemoApplication.main(ServerDemoApplication.java:13)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'zookeeper.addr' in value "${zookeeper.addr}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:172)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:237)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:211)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:842)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1187)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1166)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	... 16 common frames omitted
+2018-11-21 11:05:03.296 logback [main] INFO  c.example.demo.ServerDemoApplication - Starting ServerDemoApplication on admin-PC with PID 7988 (E:\study_workspace\server-demo\target\classes started by admin in E:\study_workspace\server-demo)
+2018-11-21 11:05:03.299 logback [main] INFO  c.example.demo.ServerDemoApplication - No active profile set, falling back to default profiles: default
+2018-11-21 11:05:03.683 logback [main] INFO  c.example.demo.ServerDemoApplication - Started ServerDemoApplication in 0.646 seconds (JVM running for 0.943)
+2018-11-21 11:05:20.878 logback [main] INFO  c.example.demo.ServerDemoApplication - Starting ServerDemoApplication on admin-PC with PID 9544 (E:\study_workspace\server-demo\target\classes started by admin in E:\study_workspace\server-demo)
+2018-11-21 11:05:20.881 logback [main] INFO  c.example.demo.ServerDemoApplication - No active profile set, falling back to default profiles: default
+2018-11-21 11:05:21.164 logback [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'zkClient': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'zookeeper.addr' in value "${zookeeper.addr}"
+2018-11-21 11:05:21.171 logback [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-11-21 11:05:21.174 logback [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'zkClient': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'zookeeper.addr' in value "${zookeeper.addr}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:380)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1378)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.example.demo.ServerDemoApplication.main(ServerDemoApplication.java:13)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'zookeeper.addr' in value "${zookeeper.addr}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:172)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:237)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:211)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:842)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1187)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1166)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	... 16 common frames omitted
+2018-11-21 11:06:21.763 logback [main] INFO  c.example.demo.ServerDemoApplication - Starting ServerDemoApplication on admin-PC with PID 4420 (E:\study_workspace\server-demo\target\classes started by admin in E:\study_workspace\server-demo)
+2018-11-21 11:06:21.766 logback [main] INFO  c.example.demo.ServerDemoApplication - No active profile set, falling back to default profiles: default
+2018-11-21 11:06:22.052 logback [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'zkClient': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'zookeeper.addr' in value "${zookeeper.addr}"
+2018-11-21 11:06:22.059 logback [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-11-21 11:06:22.062 logback [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'zkClient': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'zookeeper.addr' in value "${zookeeper.addr}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:380)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1378)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.example.demo.ServerDemoApplication.main(ServerDemoApplication.java:13)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'zookeeper.addr' in value "${zookeeper.addr}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:172)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:237)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:211)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:842)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1187)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1166)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	... 16 common frames omitted
+2018-11-21 11:09:50.899 logback [main] INFO  c.example.demo.ServerDemoApplication - Starting ServerDemoApplication on admin-PC with PID 7180 (E:\study_workspace\server-demo\target\classes started by admin in E:\study_workspace\server-demo)
+2018-11-21 11:09:50.902 logback [main] INFO  c.example.demo.ServerDemoApplication - No active profile set, falling back to default profiles: default
+2018-11-21 11:09:51.181 logback [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'zkClient': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'zookeeper.addr' in value "${zookeeper.addr}"
+2018-11-21 11:09:51.188 logback [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-11-21 11:09:51.191 logback [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'zkClient': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'zookeeper.addr' in value "${zookeeper.addr}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:380)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1378)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.example.demo.ServerDemoApplication.main(ServerDemoApplication.java:13)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'zookeeper.addr' in value "${zookeeper.addr}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:172)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:237)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:211)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:842)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1187)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1166)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	... 16 common frames omitted
+2018-11-21 11:11:13.065 logback [main] INFO  c.example.demo.ServerDemoApplication - Starting ServerDemoApplication on admin-PC with PID 4424 (E:\study_workspace\server-demo\target\classes started by admin in E:\study_workspace\server-demo)
+2018-11-21 11:11:13.068 logback [main] INFO  c.example.demo.ServerDemoApplication - No active profile set, falling back to default profiles: default
+2018-11-21 11:11:13.359 logback [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'zkClient': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'zookeeper.addr' in value "${zookeeper.addr}"
+2018-11-21 11:11:13.366 logback [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-11-21 11:11:13.368 logback [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'zkClient': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'zookeeper.addr' in value "${zookeeper.addr}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:380)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1378)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.example.demo.ServerDemoApplication.main(ServerDemoApplication.java:13)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'zookeeper.addr' in value "${zookeeper.addr}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:172)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:237)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:211)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:842)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1187)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1166)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	... 16 common frames omitted
+2018-11-21 11:12:27.309 logback [main] INFO  c.example.demo.ServerDemoApplication - Starting ServerDemoApplication on admin-PC with PID 7296 (E:\study_workspace\server-demo\target\classes started by admin in E:\study_workspace\server-demo)
+2018-11-21 11:12:27.312 logback [main] INFO  c.example.demo.ServerDemoApplication - No active profile set, falling back to default profiles: default
+2018-11-21 11:12:27.596 logback [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'zkClient': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'zookeeper.addr' in value "${zookeeper.addr}"
+2018-11-21 11:12:27.603 logback [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-11-21 11:12:27.606 logback [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'zkClient': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'zookeeper.addr' in value "${zookeeper.addr}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:380)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1378)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.example.demo.ServerDemoApplication.main(ServerDemoApplication.java:13)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'zookeeper.addr' in value "${zookeeper.addr}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:172)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:237)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:211)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:842)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1187)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1166)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	... 16 common frames omitted
+2018-11-21 11:13:05.159 logback [main] INFO  c.example.demo.ServerDemoApplication - Starting ServerDemoApplication on admin-PC with PID 8492 (E:\study_workspace\server-demo\target\classes started by admin in E:\study_workspace\server-demo)
+2018-11-21 11:13:05.161 logback [main] INFO  c.example.demo.ServerDemoApplication - No active profile set, falling back to default profiles: default
+2018-11-21 11:13:05.451 logback [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'zkClient': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'zookeeper.addr' in value "${zookeeper.addr}"
+2018-11-21 11:13:05.458 logback [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-11-21 11:13:05.461 logback [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'zkClient': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'zookeeper.addr' in value "${zookeeper.addr}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:380)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1378)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:575)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.example.demo.ServerDemoApplication.main(ServerDemoApplication.java:13)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'zookeeper.addr' in value "${zookeeper.addr}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:172)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:237)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:211)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:842)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1187)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1166)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	... 16 common frames omitted
+2018-11-21 11:18:57.425 logback [main] INFO  c.example.demo.ServerDemoApplication - Starting ServerDemoApplication on admin-PC with PID 7460 (E:\study_workspace\server-demo\target\classes started by admin in E:\study_workspace\server-demo)
+2018-11-21 11:18:57.427 logback [main] INFO  c.example.demo.ServerDemoApplication - No active profile set, falling back to default profiles: default
+2018-11-21 11:18:57.820 logback [main] INFO  c.example.demo.ServerDemoApplication - Started ServerDemoApplication in 0.654 seconds (JVM running for 0.92)
+2018-11-21 11:19:08.566 logback [main] INFO  c.example.demo.ServerDemoApplication - Starting ServerDemoApplication on admin-PC with PID 2652 (E:\study_workspace\server-demo\target\classes started by admin in E:\study_workspace\server-demo)
+2018-11-21 11:19:08.569 logback [main] INFO  c.example.demo.ServerDemoApplication - No active profile set, falling back to default profiles: default
+2018-11-21 11:19:08.962 logback [main] INFO  c.example.demo.ServerDemoApplication - Started ServerDemoApplication in 0.66 seconds (JVM running for 0.947)
+2018-11-21 11:19:20.168 logback [main] INFO  c.example.demo.ServerDemoApplication - Starting ServerDemoApplication on admin-PC with PID 9976 (E:\study_workspace\server-demo\target\classes started by admin in E:\study_workspace\server-demo)
+2018-11-21 11:19:20.170 logback [main] INFO  c.example.demo.ServerDemoApplication - No active profile set, falling back to default profiles: default
+2018-11-21 11:19:20.555 logback [main] INFO  c.example.demo.ServerDemoApplication - Started ServerDemoApplication in 0.643 seconds (JVM running for 0.927)
+2018-11-21 11:21:44.481 logback [main] INFO  c.example.demo.ServerDemoApplication - Starting ServerDemoApplication on admin-PC with PID 9200 (E:\study_workspace\server-demo\target\classes started by admin in E:\study_workspace\server-demo)
+2018-11-21 11:21:44.483 logback [main] INFO  c.example.demo.ServerDemoApplication - No active profile set, falling back to default profiles: default
+2018-11-21 11:21:44.861 logback [main] INFO  c.example.demo.ServerDemoApplication - Started ServerDemoApplication in 0.644 seconds (JVM running for 0.919)
+2018-11-21 11:21:55.235 logback [main] INFO  c.example.demo.ServerDemoApplication - Starting ServerDemoApplication on admin-PC with PID 3932 (E:\study_workspace\server-demo\target\classes started by admin in E:\study_workspace\server-demo)
+2018-11-21 11:21:55.238 logback [main] INFO  c.example.demo.ServerDemoApplication - No active profile set, falling back to default profiles: default
+2018-11-21 11:21:55.627 logback [main] INFO  c.example.demo.ServerDemoApplication - Started ServerDemoApplication in 0.65 seconds (JVM running for 0.941)
+2018-11-21 11:46:05.197 logback [main] INFO  c.example.demo.ServerDemoApplication - Starting ServerDemoApplication on admin-PC with PID 7188 (E:\study_workspace\server-demo\target\classes started by admin in E:\study_workspace\server-demo)
+2018-11-21 11:46:05.200 logback [main] INFO  c.example.demo.ServerDemoApplication - No active profile set, falling back to default profiles: default
+2018-11-21 11:46:05.591 logback [main] INFO  c.example.demo.ServerDemoApplication - Started ServerDemoApplication in 0.652 seconds (JVM running for 0.919)
+2018-11-21 11:54:57.482 logback [main] INFO  c.example.demo.ServerDemoApplication - Starting ServerDemoApplication on admin-PC with PID 8756 (E:\study_workspace\server-demo\target\classes started by admin in E:\study_workspace\server-demo)
+2018-11-21 11:54:57.485 logback [main] INFO  c.example.demo.ServerDemoApplication - No active profile set, falling back to default profiles: default
+2018-11-21 11:54:57.866 logback [main] INFO  c.example.demo.ServerDemoApplication - Started ServerDemoApplication in 0.64 seconds (JVM running for 0.918)
+2018-11-21 11:57:59.290 logback [main] INFO  c.example.demo.ServerDemoApplication - Starting ServerDemoApplication on admin-PC with PID 2188 (E:\study_workspace\server-demo\target\classes started by admin in E:\study_workspace\server-demo)
+2018-11-21 11:57:59.293 logback [main] INFO  c.example.demo.ServerDemoApplication - No active profile set, falling back to default profiles: default
+2018-11-21 11:57:59.694 logback [main] INFO  c.example.demo.ServerDemoApplication - Started ServerDemoApplication in 0.672 seconds (JVM running for 0.955)
+2018-11-21 11:58:25.408 logback [main] INFO  c.example.demo.ServerDemoApplication - Starting ServerDemoApplication on admin-PC with PID 7060 (E:\study_workspace\server-demo\target\classes started by admin in E:\study_workspace\server-demo)
+2018-11-21 11:58:25.410 logback [main] INFO  c.example.demo.ServerDemoApplication - No active profile set, falling back to default profiles: default
+2018-11-21 11:58:25.787 logback [main] INFO  c.example.demo.ServerDemoApplication - Started ServerDemoApplication in 0.639 seconds (JVM running for 0.92)
+2018-11-21 12:00:31.408 logback [main] INFO  c.example.demo.ServerDemoApplication - Starting ServerDemoApplication on admin-PC with PID 8868 (E:\study_workspace\server-demo\target\classes started by admin in E:\study_workspace\server-demo)
+2018-11-21 12:00:31.411 logback [main] INFO  c.example.demo.ServerDemoApplication - No active profile set, falling back to default profiles: default
+2018-11-21 12:00:31.796 logback [main] INFO  c.example.demo.ServerDemoApplication - Started ServerDemoApplication in 0.649 seconds (JVM running for 0.927)
+2018-11-21 12:01:03.964 logback [main] INFO  c.example.demo.ServerDemoApplication - Starting ServerDemoApplication on admin-PC with PID 8812 (E:\study_workspace\server-demo\target\classes started by admin in E:\study_workspace\server-demo)
+2018-11-21 12:01:03.967 logback [main] INFO  c.example.demo.ServerDemoApplication - No active profile set, falling back to default profiles: default
+2018-11-21 12:01:04.354 logback [main] INFO  c.example.demo.ServerDemoApplication - Started ServerDemoApplication in 0.654 seconds (JVM running for 0.941)
+2018-11-21 13:40:30.800 logback [main] INFO  c.example.demo.ServerDemoApplication - Starting ServerDemoApplication on admin-PC with PID 4540 (E:\study_workspace\server-demo\target\classes started by admin in E:\study_workspace\server-demo)
+2018-11-21 13:40:30.803 logback [main] INFO  c.example.demo.ServerDemoApplication - No active profile set, falling back to default profiles: default
+2018-11-21 13:40:31.185 logback [main] INFO  c.example.demo.ServerDemoApplication - Started ServerDemoApplication in 0.643 seconds (JVM running for 0.919)
+2018-11-21 15:46:49.638 logback [main] INFO  c.example.demo.ServerDemoApplication - Starting ServerDemoApplication on admin-PC with PID 8000 (E:\study_workspace\server-demo\target\classes started by admin in E:\study_workspace\server-demo)
+2018-11-21 15:46:49.640 logback [main] INFO  c.example.demo.ServerDemoApplication - No active profile set, falling back to default profiles: default
+2018-11-21 15:46:50.025 logback [main] INFO  c.example.demo.ServerDemoApplication - Started ServerDemoApplication in 0.648 seconds (JVM running for 0.932)
+2018-11-21 15:46:50.031 logback [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:zookeeper.version=3.4.10-39d3a4f269333c922ed3db283be479f9deacaa0f, built on 03/23/2017 10:13 GMT
+2018-11-21 15:46:50.031 logback [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:host.name=admin-PC
+2018-11-21 15:46:50.031 logback [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.version=1.8.0_91
+2018-11-21 15:46:50.031 logback [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.vendor=Oracle Corporation
+2018-11-21 15:46:50.031 logback [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.home=D:\jdk\jre1.8.0_91
+2018-11-21 15:46:50.032 logback [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.class.path=E:\study_workspace\server-demo\target\classes;E:\maven_repository\org\springframework\boot\spring-boot-starter\2.1.0.RELEASE\spring-boot-starter-2.1.0.RELEASE.jar;E:\maven_repository\org\springframework\boot\spring-boot\2.1.0.RELEASE\spring-boot-2.1.0.RELEASE.jar;E:\maven_repository\org\springframework\spring-context\5.1.2.RELEASE\spring-context-5.1.2.RELEASE.jar;E:\maven_repository\org\springframework\spring-aop\5.1.2.RELEASE\spring-aop-5.1.2.RELEASE.jar;E:\maven_repository\org\springframework\spring-beans\5.1.2.RELEASE\spring-beans-5.1.2.RELEASE.jar;E:\maven_repository\org\springframework\spring-expression\5.1.2.RELEASE\spring-expression-5.1.2.RELEASE.jar;E:\maven_repository\org\springframework\boot\spring-boot-autoconfigure\2.1.0.RELEASE\spring-boot-autoconfigure-2.1.0.RELEASE.jar;E:\maven_repository\org\springframework\boot\spring-boot-starter-logging\2.1.0.RELEASE\spring-boot-starter-logging-2.1.0.RELEASE.jar;E:\maven_repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;E:\maven_repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;E:\maven_repository\org\apache\logging\log4j\log4j-to-slf4j\2.11.1\log4j-to-slf4j-2.11.1.jar;E:\maven_repository\org\apache\logging\log4j\log4j-api\2.11.1\log4j-api-2.11.1.jar;E:\maven_repository\org\slf4j\jul-to-slf4j\1.7.25\jul-to-slf4j-1.7.25.jar;E:\maven_repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;E:\maven_repository\org\springframework\spring-core\5.1.2.RELEASE\spring-core-5.1.2.RELEASE.jar;E:\maven_repository\org\springframework\spring-jcl\5.1.2.RELEASE\spring-jcl-5.1.2.RELEASE.jar;E:\maven_repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23.jar;E:\maven_repository\org\apache\zookeeper\zookeeper\3.4.10\zookeeper-3.4.10.jar;E:\maven_repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;E:\maven_repository\org\slf4j\slf4j-log4j12\1.7.25\slf4j-log4j12-1.7.25.jar;E:\maven_repository\log4j\log4j\1.2.16\log4j-1.2.16.jar;E:\maven_repository\jline\jline\0.9.94\jline-0.9.94.jar;E:\maven_repository\io\netty\netty\3.10.5.Final\netty-3.10.5.Final.jar;E:\maven_repository\org\projectlombok\lombok\1.18.2\lombok-1.18.2.jar
+2018-11-21 15:46:50.032 logback [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.library.path=D:\jdk\jre1.8.0_91\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:/jdk/jre1.8.0_91/bin/server;D:/jdk/jre1.8.0_91/bin;D:/jdk/jre1.8.0_91/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\jdk\jdk1.8.0_91\bin\;D:\apache-maven-3.5.4\bin\;D:\TortoiseSVN\bin;D:\gradle-4.9\bin;D:\Python27;D:\Python27;D:\eclipse4.9;;.
+2018-11-21 15:46:50.032 logback [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.io.tmpdir=C:\Users\admin\AppData\Local\Temp\
+2018-11-21 15:46:50.032 logback [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.compiler=<NA>
+2018-11-21 15:46:50.032 logback [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.name=Windows 7
+2018-11-21 15:46:50.032 logback [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.arch=amd64
+2018-11-21 15:46:50.032 logback [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.version=6.1
+2018-11-21 15:46:50.032 logback [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.name=admin
+2018-11-21 15:46:50.032 logback [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.home=C:\Users\admin
+2018-11-21 15:46:50.032 logback [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.dir=E:\study_workspace\server-demo
+2018-11-21 15:46:50.033 logback [main] INFO  org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=118.24.160.133:2181 sessionTimeout=2000 watcher=ZkClient(zooKeeper=null, host=118.24.160.133:2181, countDownLatch=java.util.concurrent.CountDownLatch@7a1a14a4[Count = 1])
+2018-11-21 15:46:50.056 logback [main-SendThread(118.24.160.133:2181)] INFO  org.apache.zookeeper.ClientCnxn - Opening socket connection to server 118.24.160.133/118.24.160.133:2181. Will not attempt to authenticate using SASL (unknown error)
+2018-11-21 15:46:50.097 logback [main-SendThread(118.24.160.133:2181)] INFO  org.apache.zookeeper.ClientCnxn - Socket connection established to 118.24.160.133/118.24.160.133:2181, initiating session
+2018-11-21 15:46:50.147 logback [main-SendThread(118.24.160.133:2181)] INFO  org.apache.zookeeper.ClientCnxn - Session establishment complete on server 118.24.160.133/118.24.160.133:2181, sessionid = 0x1000000ee470007, negotiated timeout = 4000
+2018-11-21 15:46:50.151 logback [main] INFO  com.example.demo.util.ZkClient - zookeeper connect success!
+2018-11-21 15:46:50.201 logback [main] INFO  org.apache.zookeeper.ZooKeeper - Session: 0x1000000ee470007 closed
+2018-11-21 15:46:50.201 logback [main-EventThread] INFO  org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x1000000ee470007
+2018-11-21 15:46:50.202 logback [main] INFO  com.example.demo.util.ZkClient - zookeeper close success!
+2018-11-21 15:47:05.494 logback [main] INFO  c.example.demo.ServerDemoApplication - Starting ServerDemoApplication on admin-PC with PID 7664 (E:\study_workspace\server-demo\target\classes started by admin in E:\study_workspace\server-demo)
+2018-11-21 15:47:05.497 logback [main] INFO  c.example.demo.ServerDemoApplication - No active profile set, falling back to default profiles: default
+2018-11-21 15:47:05.877 logback [main] INFO  c.example.demo.ServerDemoApplication - Started ServerDemoApplication in 0.646 seconds (JVM running for 0.918)
+2018-11-21 15:47:05.884 logback [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:zookeeper.version=3.4.10-39d3a4f269333c922ed3db283be479f9deacaa0f, built on 03/23/2017 10:13 GMT
+2018-11-21 15:47:05.885 logback [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:host.name=admin-PC
+2018-11-21 15:47:05.885 logback [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.version=1.8.0_91
+2018-11-21 15:47:05.885 logback [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.vendor=Oracle Corporation
+2018-11-21 15:47:05.885 logback [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.home=D:\jdk\jre1.8.0_91
+2018-11-21 15:47:05.885 logback [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.class.path=E:\study_workspace\server-demo\target\classes;E:\maven_repository\org\springframework\boot\spring-boot-starter\2.1.0.RELEASE\spring-boot-starter-2.1.0.RELEASE.jar;E:\maven_repository\org\springframework\boot\spring-boot\2.1.0.RELEASE\spring-boot-2.1.0.RELEASE.jar;E:\maven_repository\org\springframework\spring-context\5.1.2.RELEASE\spring-context-5.1.2.RELEASE.jar;E:\maven_repository\org\springframework\spring-aop\5.1.2.RELEASE\spring-aop-5.1.2.RELEASE.jar;E:\maven_repository\org\springframework\spring-beans\5.1.2.RELEASE\spring-beans-5.1.2.RELEASE.jar;E:\maven_repository\org\springframework\spring-expression\5.1.2.RELEASE\spring-expression-5.1.2.RELEASE.jar;E:\maven_repository\org\springframework\boot\spring-boot-autoconfigure\2.1.0.RELEASE\spring-boot-autoconfigure-2.1.0.RELEASE.jar;E:\maven_repository\org\springframework\boot\spring-boot-starter-logging\2.1.0.RELEASE\spring-boot-starter-logging-2.1.0.RELEASE.jar;E:\maven_repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;E:\maven_repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;E:\maven_repository\org\apache\logging\log4j\log4j-to-slf4j\2.11.1\log4j-to-slf4j-2.11.1.jar;E:\maven_repository\org\apache\logging\log4j\log4j-api\2.11.1\log4j-api-2.11.1.jar;E:\maven_repository\org\slf4j\jul-to-slf4j\1.7.25\jul-to-slf4j-1.7.25.jar;E:\maven_repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;E:\maven_repository\org\springframework\spring-core\5.1.2.RELEASE\spring-core-5.1.2.RELEASE.jar;E:\maven_repository\org\springframework\spring-jcl\5.1.2.RELEASE\spring-jcl-5.1.2.RELEASE.jar;E:\maven_repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23.jar;E:\maven_repository\org\apache\zookeeper\zookeeper\3.4.10\zookeeper-3.4.10.jar;E:\maven_repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;E:\maven_repository\org\slf4j\slf4j-log4j12\1.7.25\slf4j-log4j12-1.7.25.jar;E:\maven_repository\log4j\log4j\1.2.16\log4j-1.2.16.jar;E:\maven_repository\jline\jline\0.9.94\jline-0.9.94.jar;E:\maven_repository\io\netty\netty\3.10.5.Final\netty-3.10.5.Final.jar;E:\maven_repository\org\projectlombok\lombok\1.18.2\lombok-1.18.2.jar
+2018-11-21 15:47:05.885 logback [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.library.path=D:\jdk\jre1.8.0_91\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:/jdk/jre1.8.0_91/bin/server;D:/jdk/jre1.8.0_91/bin;D:/jdk/jre1.8.0_91/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\jdk\jdk1.8.0_91\bin\;D:\apache-maven-3.5.4\bin\;D:\TortoiseSVN\bin;D:\gradle-4.9\bin;D:\Python27;D:\Python27;D:\eclipse4.9;;.
+2018-11-21 15:47:05.885 logback [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.io.tmpdir=C:\Users\admin\AppData\Local\Temp\
+2018-11-21 15:47:05.885 logback [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:java.compiler=<NA>
+2018-11-21 15:47:05.885 logback [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.name=Windows 7
+2018-11-21 15:47:05.885 logback [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.arch=amd64
+2018-11-21 15:47:05.885 logback [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:os.version=6.1
+2018-11-21 15:47:05.885 logback [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.name=admin
+2018-11-21 15:47:05.885 logback [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.home=C:\Users\admin
+2018-11-21 15:47:05.885 logback [main] INFO  org.apache.zookeeper.ZooKeeper - Client environment:user.dir=E:\study_workspace\server-demo
+2018-11-21 15:47:05.886 logback [main] INFO  org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=118.24.160.133:2181 sessionTimeout=2000 watcher=ZkClient(zooKeeper=null, host=118.24.160.133:2181, countDownLatch=java.util.concurrent.CountDownLatch@54e7df6a[Count = 1])
+2018-11-21 15:47:05.907 logback [main-SendThread(118.24.160.133:2181)] INFO  org.apache.zookeeper.ClientCnxn - Opening socket connection to server 118.24.160.133/118.24.160.133:2181. Will not attempt to authenticate using SASL (unknown error)
+2018-11-21 15:47:05.951 logback [main-SendThread(118.24.160.133:2181)] INFO  org.apache.zookeeper.ClientCnxn - Socket connection established to 118.24.160.133/118.24.160.133:2181, initiating session
+2018-11-21 15:47:06.252 logback [main-SendThread(118.24.160.133:2181)] INFO  org.apache.zookeeper.ClientCnxn - Session establishment complete on server 118.24.160.133/118.24.160.133:2181, sessionid = 0x1000000ee470008, negotiated timeout = 4000
+2018-11-21 15:47:06.256 logback [main] INFO  com.example.demo.util.ZkClient - zookeeper connect success!
+2018-11-21 15:47:06.321 logback [main] INFO  org.apache.zookeeper.ZooKeeper - Session: 0x1000000ee470008 closed
+2018-11-21 15:47:06.322 logback [main-EventThread] INFO  org.apache.zookeeper.ClientCnxn - EventThread shut down for session: 0x1000000ee470008
+2018-11-21 15:47:06.323 logback [main] INFO  com.example.demo.util.ZkClient - zookeeper close success!

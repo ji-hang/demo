@@ -11,6 +11,7 @@ public class Entity implements Serializable {
 
 	private String id;
 	
+	// name
 	private String name;
 
 	public String getId() {

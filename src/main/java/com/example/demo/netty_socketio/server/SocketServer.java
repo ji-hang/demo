@@ -16,7 +16,7 @@ import com.example.demo.netty_socketio.listener.MyAuthorizationListener;
  * @author admin
  *
  */
-@Component
+//@Component
 public class SocketServer implements ApplicationRunner {
 	
 	public static void main(String[] args) throws Exception {
@@ -27,7 +27,7 @@ public class SocketServer implements ApplicationRunner {
 	public void run(ApplicationArguments args) throws Exception {
 		Configuration config = new Configuration();
 		//指定要主机ip地址，这个和页面请求ip地址一致
-		config.setHostname("172.16.9.33");
+		config.setHostname("172.16.9.43");
 		//指定端口号
 		config.setPort(9090);
 		//设置最大的WebSocket帧内容长度限制
